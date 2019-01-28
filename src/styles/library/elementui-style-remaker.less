@@ -1,0 +1,132 @@
+.el-menu {
+  border-right: 0;
+  .el-menu-item,
+  .el-submenu__title {
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+  }
+}
+/* Table 表格样式改造 */
+.el-table--mini th {
+  padding: 2px 0;
+  background: #f5f7fa;
+}
+
+.el-table--mini td {
+  padding: 2px 0;
+}
+
+.el-table {
+  .el-table__body {
+    .cell {
+      .el-button {
+        border: none;
+        background: transparent;
+
+        & + .el-button {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+.table__search {
+  .el-form-item--mini.el-form-item {
+    margin-bottom: 4px;
+
+    .el-form-item__label {
+      font-size: 12px;
+    }
+  }
+}
+
+.el-form-item--mini.el-form-item {
+  margin-bottom: 16px;
+
+  .el-form-item__label {
+    font-size: 12px;
+  }
+}
+
+.el-input__inner {
+  border-radius: 2px;
+  padding: 0 10px;
+}
+
+.el-button--mini {
+  border-radius: 1px;
+}
+
+.el-dialog {
+  /**优化全局dialog显示 */
+  &.is-fullscreen {
+    width: 80%;
+    .el-dialog__header {
+      padding: 10px 20px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+      .el-dialog__headerbtn {
+        top: 10px;
+      }
+    }
+    .el-dialog__body {
+      position: absolute;
+      top: 42px;
+      bottom: 52px;
+      width: 100%;
+      overflow: auto;
+      padding: 10px 20px;
+    }
+    .el-dialog__footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 10px 20px;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+.el-form-item.is-success .el-input__inner,
+.el-form-item.is-success .el-input__inner:focus,
+.el-form-item.is-success .el-textarea__inner,
+.el-form-item.is-success .el-textarea__inner:focus {
+  border-color: #dcdfe6;
+}
+
+.el-tree {
+  .el-tree-node__label {
+    font-size: 12px;
+  }
+}
+
+.el-date-editor {
+  .el-input__icon {
+    &.el-range__icon {
+      display: none;
+    }
+  }
+}
+
+.el-table {
+  .table__row--success {
+    background-color: #9eea6a !important;
+  }
+}
+
+.el-menu--collapse > .el-menu-item [class^='iconfont'],
+.el-menu--collapse > .el-submenu > .el-submenu__title [class^='iconfont'] {
+  margin: 0;
+  vertical-align: middle;
+  width: 24px;
+  text-align: center;
+}
+
+.el-submenu [class^='iconfont'] {
+  vertical-align: middle;
+  margin-right: 5px;
+  text-align: center;
+  font-size: 18px;
+}
